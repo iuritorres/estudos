@@ -26,7 +26,8 @@
 .produto {
     background-color: rgb(230, 230, 230);
     width: calc((100% - 65px) / 2 );
-    margin: 30px auto;
+    height: 300px;
+    margin: 15px auto;
     text-align: center;
 }
 
