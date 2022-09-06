@@ -1,0 +1,37 @@
+.container-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+}
+
+.container-header img {
+    margin-left: 60px;
+    width: 150px;
+}
+
+.menu-secoes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.menu-secoes ion-icon {
+font-size: 30px;
+}
+
+.menu-secoes a {
+    color: rgb(48, 47, 47);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-secoes a:hover {
+    color: #00020D;
+}

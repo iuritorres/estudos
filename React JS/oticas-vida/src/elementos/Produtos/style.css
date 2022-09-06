@@ -1,0 +1,39 @@
+.secao-produtos {
+    background-color: rgb(243, 243, 243);
+    width: 100vw;
+}
+
+.conteudo {
+    margin: 50px auto;
+    width: 900px;
+}
+
+.titulo-descricao {
+    text-align: center;
+    font-size: 16px;
+}
+
+.titulo-descricao h1 {
+    font-size: 30px;
+}
+
+.container-produtos {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.produto {
+    background-color: rgb(230, 230, 230);
+    width: calc((100% - 65px) / 2 );
+    margin: 30px auto;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 250px;
+}
+
+.detalhes-produtos {
+    text-align: center;
+}
