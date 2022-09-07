@@ -9,9 +9,9 @@ export default function Header() {
             <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="oticas-vida-logo" tooltip="Logo da Óticas Vida" />
 
             <nav className="menu-secoes">
-                <a href="#">PRODUTOS</a>
-                <a href="#">SOBRE</a>
-                <a href="#">CONTATO</a>
+                <a href="#secao-produtos">PRODUTOS</a>
+                <a href="#secao-resumo-quem-somos">SOBRE</a>
+                <a href="#secao-fale-conosco">CONTATO</a>
                 <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
             </nav>
         </header>

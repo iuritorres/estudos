@@ -43,3 +43,39 @@
     font-size: 45px;
     line-height: 45px;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .secao-resumo-quem-somos {
+        padding: 60px 20px;
+    }
+
+    .div-beneficios-quem-somos {
+        padding: 15px;
+    }
+
+    .div-beneficios-quem-somos h1 {
+        font-size: 22px;
+    }
+
+    .div-beneficios-quem-somos p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .secao-resumo-quem-somos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .box1-quem-somos, .box2-quem-somos {
+        flex-flow: column wr;
+    }
+
+    .box img, .box div {
+        width: 100%;
+        height: 300px;
+    }
+}

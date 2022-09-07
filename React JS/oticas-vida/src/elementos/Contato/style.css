@@ -61,3 +61,32 @@
     height: 14px;
     margin-right: 7px;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .secao-fale-conosco {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .secao-fale-conosco {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .div-contato-redes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .div-contato, .div-redes {
+        padding: 0;
+    }
+
+    .div-contato ul li, .div-redes ul li {
+        width: 150px;
+    }
+}

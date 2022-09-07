@@ -3,7 +3,7 @@ import './style.css';
 
 export function FaleConosco() {
     return(
-        <section className="secao-fale-conosco">
+        <section id="secao-fale-conosco" className="secao-fale-conosco">
 
             <div className="conteudo-fale-conosco">
                 <div className="titulo-descricao-fale-conosco">

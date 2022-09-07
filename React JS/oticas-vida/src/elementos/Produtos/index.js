@@ -3,7 +3,7 @@ import './style.css';
 
 export default function Produtos() {
     return (
-        <section className="secao-produtos">
+        <section id="secao-produtos" className="secao-produtos">
             <div className="conteudo-secao-produtos">
                 <div className="titulo-descricao-produtos">
                     <h1>NOSSOS PRODUTOS</h1>

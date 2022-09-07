@@ -35,3 +35,19 @@ font-size: 30px;
 .menu-secoes a:hover {
     color: #00020D;
 }
+
+/* Media Queries */
+
+@media (max-width: 550px) {
+    .container-header {
+        flex-direction: column;
+    }
+
+    .container-header nav {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #aaadaf;
+    }
+}

@@ -43,3 +43,38 @@
 .detalhes-produtos {
     text-align: center;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .secao-produtos {
+        padding: 60px 20px;
+    }
+
+    .produto h2 {
+        font-size: 22px;
+    }
+
+    .produto img {
+        max-width: 100px;
+    }
+
+    .produto p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .secao-produtos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .produto {
+        width: 100%;
+    }
+
+    .detalhes-produtos ul {
+        text-align: left;
+    }
+}

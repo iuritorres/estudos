@@ -24,3 +24,26 @@
     text-transform: uppercase;
     font-size: 62px;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container-banner div h1 {
+        font-size: 40px;
+        max-width: 350px;
+    }
+
+    .container-banner div p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container-banner {
+        background-position: 89% center;
+    }
+
+    .container-banner div {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}

@@ -3,7 +3,7 @@ import './style.css'
 
 export function QuemSomosResumo() {
     return(
-        <section className="secao-resumo-quem-somos">
+        <section id="secao-resumo-quem-somos" className="secao-resumo-quem-somos">
             <div className="conteudo-quem-somos">
                 <div className="titulo-descricao-quem-somos">
                     <h1>QUEM SOMOS NÓS?</h1>
@@ -13,7 +13,7 @@ export function QuemSomosResumo() {
 
                 <div className="beneficios-quem-somos">
 
-                    <div className="box1-quem-somos">
+                    <div className="box box1-quem-somos">
                         <img src={`${process.env.PUBLIC_URL}/assets/loja.png`} alt="atendimento-flexivel" tooltip="Atendimento Flexível"/>
                         <div className="div-beneficios-quem-somos">
                             <h1>NOSSAS<br/>FILIAIS</h1>
@@ -21,7 +21,7 @@ export function QuemSomosResumo() {
                         </div>
                     </div>
 
-                    <div className="box2-quem-somos">
+                    <div className="box box2-quem-somos">
                         <div className="div-beneficios-quem-somos">
                             <h1>ATEMDIMENTO<br/>FLEXÍVEL</h1>
                             <p>Nossa equipe é treinada para te atender</p>
