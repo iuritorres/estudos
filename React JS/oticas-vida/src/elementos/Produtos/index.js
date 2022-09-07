@@ -4,8 +4,8 @@ import './style.css';
 export default function Produtos() {
     return (
         <section className="secao-produtos">
-            <div className="conteudo">
-                <div className="titulo-descricao">
+            <div className="conteudo-secao-produtos">
+                <div className="titulo-descricao-produtos">
                     <h1>NOSSOS PRODUTOS</h1>
 
                     <p>Trabalhamos com óculos de grau, óculos de sol, lentes transition nos modelos masculino, feminino e infantil.</p>
@@ -45,11 +45,11 @@ export default function Produtos() {
                 <div className="detalhes-produtos">
                     <p>Todos os nossos produtos incluem:</p>
 
-                    <ul type="radio">
-                        <li>Garantia de 1 ano</li>
-                        <li>Manutenção preventiva</li>
-                        <li>Descontos especiais na compra da segunda unidade</li>
-                        <li>Flexibilidade de pagamento</li>
+                    <ul type="none">
+                        <li>• Garantia de 1 ano</li>
+                        <li>• Manutenção preventiva</li>
+                        <li>• Descontos especiais na compra da segunda unidade</li>
+                        <li>• Flexibilidade de pagamento</li>
                     </ul>
                 </div>
             </div>

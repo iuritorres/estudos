@@ -3,17 +3,17 @@
     width: 100vw;
 }
 
-.conteudo {
+.conteudo-secao-produtos {
     margin: 50px auto;
-    width: 900px;
+    width: 1050px;
 }
 
-.titulo-descricao {
+.titulo-descricao-produtos {
     text-align: center;
     font-size: 16px;
 }
 
-.titulo-descricao h1 {
+.titulo-descricao-produtos h1 {
     font-size: 30px;
 }
 
@@ -21,10 +21,15 @@
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
+    margin: 50px auto;
 }
 
 .produto {
     background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
     width: calc((100% - 65px) / 2 );
     height: 300px;
     margin: 15px auto;

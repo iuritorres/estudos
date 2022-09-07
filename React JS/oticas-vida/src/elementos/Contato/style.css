@@ -1,0 +1,63 @@
+.secao-fale-conosco {
+    background-color: #00020D;
+}
+
+.conteudo-fale-consoco {
+    margin: 50px auto;
+    width: 1050px;
+}
+
+.titulo-descricao-fale-conosco {
+    color: rgb(196, 196, 196);
+    text-align: center;
+    font-size: 16px;
+    margin: 50px auto;
+}
+
+.titulo-descricao-fale-conosco h1 {
+    font-size: 30px;
+}
+
+.div-contato-redes {
+    width: 1050px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div-contato, .div-redes {
+    width: 525px;
+}
+
+.div-contato {
+    padding-left: 350px;
+}
+
+.div-redes {
+    padding-left: 50px;
+}
+
+.div-contato ul li p, .div-redes ul li p, .div-contato h2, .div-redes h2 {
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    text-align: left;
+}
+
+.div-contato ul, .div-redes ul {
+    padding-inline-start: 0;
+}
+
+.div-contato ul li, .div-redes ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 0;
+}
+
+.div-contato ul li img, .div-redes ul li img {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}
