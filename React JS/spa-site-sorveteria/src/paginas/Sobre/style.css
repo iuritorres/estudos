@@ -1,0 +1,57 @@
+.secao-banner-pagina-sobre {
+    padding-top: 90px;
+    background-image: url(../../../public/assets/banner-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.secao-banner-pagina-sobre h1 {
+    line-height: 65vh;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.secao-sobre-conteudo {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.secao-sobre-conteudo h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.secao-sobre-conteudo span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.secao-sobre-conteudo p {
+    margin-top: 30px;
+}
+
+.secao-imagens-pagina-sobre img {
+    height: 80vh;
+    width: 50%;
+}
+
+/* Media Queries */
+
+@media screen and ( max-width: 425px ) {
+    .secao-banner-pagina-sobre h1 {
+        line-height: 60vh;
+        font-size: 40px;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .secao-imagens-pagina-sobre img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,140 @@
+/* Secao Banner */
+.secao-banner {
+    background-color: #F2D377;
+    background-image: url(../../../public/assets/banner-home.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 85vh;
+    min-height: 85vh;
+    padding-top: 90px;
+}
+
+.container-secao-banner h1 {
+    line-height: 85vh;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+/* Secao Sabores */
+.secao-sabores {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.secao-sabores div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 90px;
+}
+
+.secao-sabores div h2 { font-size: 40px; margin-bottom: -8px; }
+.secao-sabores div span { font-weight: bold; font-style: italic;}
+.secao-sabores div p { text-align: left; margin-top: 40px; }
+
+.secao-sabores img, .secao-sabores div { width: 50%; }
+
+/* Secao Eventos */
+
+.secao-eventos {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.secao-eventos div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 90px;
+}
+
+.secao-eventos div h2 { font-size: 40px; margin-bottom: -8px; }
+.secao-eventos div span { font-weight: bold; font-style: italic;}
+.secao-eventos div p { text-align: left; margin-top: 40px; }
+
+.secao-eventos img, .secao-eventos div { width: 50%; }
+
+/* Secao Sobre */
+
+.secao-sobre {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.secao-sobre div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 90px;
+}
+
+.secao-sobre div h2 { font-size: 40px; margin-bottom: -8px; }
+.secao-sobre div span { font-weight: bold; font-style: italic;}
+.secao-sobre div p { text-align: left; margin-top: 40px; }
+
+.secao-sobre img, .secao-sobre div { width: 50%; }
+
+/* Media Queries */
+
+@media screen and ( max-width: 425px ) {
+    .container-secao-banner h1 { font-size: 40px; }
+
+    .secao-banner { background-size: 40vh; padding-top: 30px;}
+}
+
+@media screen and ( max-width: 768px) {
+
+    main {
+        padding-top: 70px;
+    }
+
+    .container-secao-banner h1 { font-size: 55px; }
+
+    .secao-sabores,
+    .secao-eventos,
+    .secao-sobre
+    {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .secao-sabores img { order: 1; }
+    .secao-sabores div { order: 2; }
+    .secao-eventos img { order: 3; }
+    .secao-eventos div { order: 4; }
+    .secao-sobre img { order: 5; }
+    .secao-sobre div { order: 6; }
+
+    .secao-sabores img,
+    .secao-sabores div,
+    .secao-eventos img,
+    .secao-eventos div,
+    .secao-sobre img,
+    .secao-sobre div
+    {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+
+    .secao-banner { background-size: 75vh; }
+
+    .container-secao-banner h1 {
+        font-size: 50px;
+        line-height: 10vh;
+        padding-top: 23%;
+    }
+
+    .secao-sabores,
+    .secao-eventos,
+    .secao-sobre
+    {
+        width: 100%;
+    }
+}
