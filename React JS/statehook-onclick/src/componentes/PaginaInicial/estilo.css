@@ -16,6 +16,18 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.area-texto {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  margin: 35px auto;
 }
 
 button {

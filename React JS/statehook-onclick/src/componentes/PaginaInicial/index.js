@@ -10,6 +10,12 @@ export default function PaginaInicial() {
     setNumeroAleatorio(novoNumero);
   }
 
+  const [ novoTexto, setNovoTexto ] = useState();
+
+  function alterarTexto() {
+    setNovoTexto('Hello World!');
+  }
+
   return(
     <div className="conteudo-centralizado">
         <h3>Número aleatório:</h3>
@@ -23,7 +29,19 @@ export default function PaginaInicial() {
           <button onClick={ gerarNumero } >
             Gerar número
           </button>
+
+          <div className="area-texto">
+            <h2>{ novoTexto }</h2>
+          </div>
+          <label>
+            Click no botão abaixo para aparecer um texto:
+          </label>
+
+          <button onClick={ alterarTexto }>
+            Gerar texto
+          </button>
         </div>
+
       </div>
   );
 }
