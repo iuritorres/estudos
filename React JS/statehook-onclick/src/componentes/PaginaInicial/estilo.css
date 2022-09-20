@@ -4,10 +4,22 @@
   align-items: center;
   flex-direction: column;
   background-color: #fff; 
-  padding: 20px;
+  padding: 15px;
   box-shadow: 3px 6px 10px 6px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   box-sizing: border-box;
+  margin: 30px auto;
+}
+
+.head-box {
+  padding: 0 15px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-button {
+  margin: 0;
 }
 
 .area-botao {
@@ -20,13 +32,13 @@
 }
 
 .area-texto {
-  width: 250px;
-  height: 40px;
+  width: 325px;
+  height: 70px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: #0AC5D4;
   margin: 35px auto;
 }
 
@@ -50,3 +62,4 @@ button:hover {
   transition-duration: 0.3s;
   background: #0a99a3;
 }
+
