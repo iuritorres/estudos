@@ -1,0 +1,6 @@
+funcao somarDoisNumeros(numero1, numero2):
+    resultado = numero1 + numero2
+
+    return resultado
+
+somarDoisNumeros(1, 1)

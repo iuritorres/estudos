@@ -1,14 +1,15 @@
-# imports
+# Imports
 import os
 
 import player
 import items
 
-### game
-os.system('cls') # limpa o console
+### Game
+os.system('cls')
 
 jogador = player.Player()
 
 jogador.equipItem('helmet', 'Capacete Kevlar')
 jogador.equipItem('chestplate', 'Camisa')
+jogador.equipItem('boots', 'Botas Kevlar')
 print(jogador.equipment)

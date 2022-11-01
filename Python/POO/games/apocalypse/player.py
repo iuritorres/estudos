@@ -1,24 +1,24 @@
-# imports
+# Imports
 import items
 
-### player
+### Player
 class Player():
     def __init__(self):
 
-        # attributes
+        # Attributes
         self.attributes = {
             'health': 20,
             'hunger': 20,
             'stamina': 10
         }
 
-        # hotbar
+        # Hotbar
         self.hotbar = []
 
-        # secondary_hand
+        # Secondary Hand
         self.secondaryHand = ''
 
-        # equipament
+        # Equipament
         self.equipment = {
             'helmet': '',
             'chestplate': '',
@@ -26,7 +26,7 @@ class Player():
             'boots': ''
         }
 
-        # inventory
+        # Inventory
         self.inventory = []
 
     def equipItem(self, category, item):
