@@ -29,7 +29,7 @@ export class Player {
         // Creating player sprite
         this.playerObject = document.createElement('img');
         this.playerObject.classList.add('player-object');
-        this.playerObject.src = '../sprites/survivor.png';
+        this.playerObject.src = '../sprites/characters/survivor.png';
 
     };
 
