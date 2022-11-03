@@ -23,11 +23,16 @@ body {
 
 /* Screen */
 .screen {
-    width: 720px;
-    height: 480px;
+    width: 960px;
+    height: 540px;
     background-color: #7C7C8A;
     border-radius: 4px;
     position: relative;
+
+    background-image: url('../sprites/rooms/forest.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* -- Objects -- */
