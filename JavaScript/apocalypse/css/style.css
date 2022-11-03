@@ -16,6 +16,11 @@ body {
     height: 100vh;
 }
 
+:root {
+    --player-position-x: 320px;
+    --player-position-y: 240px;
+}
+
 /* Screen */
 .screen {
     width: 720px;
@@ -33,6 +38,6 @@ body {
     height: 80px;
 
     position: absolute;
-    top: 240px;
-    left: calc(360px - (80px/2));
+    top: var(--player-position-y);
+    left: var(--player-position-x);
 }

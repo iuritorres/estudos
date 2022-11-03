@@ -9,7 +9,7 @@ function gameInit() {
     // Creating the game's objects
     const jogador = new Player();
     jogador.movePlayer();
-    
+    console.log(jogador.playerPositionY);
 
     // Adding objects in screen
     screen.appendChild(jogador.playerObject);
