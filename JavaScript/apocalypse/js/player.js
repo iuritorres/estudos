@@ -1,5 +1,4 @@
 export class Player {
-
     constructor() {
 
         // Attributes
