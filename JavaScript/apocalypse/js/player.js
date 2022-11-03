@@ -39,12 +39,13 @@ export class Player {
             this.keyPressed = event.key;
 
             // Validating movements
-            const acceptedMoves = ['w', 'a', 's', 'd'];
+            const acceptedMoves = ['w', 'a', 's', 'd',
+                                   'ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowRight'];
 
             if ( acceptedMoves.includes(this.keyPressed) ) {
 
                 // W => MoveFoward
-                if ( this.keyPressed === acceptedMoves[0] ) {
+                if ( this.keyPressed === acceptedMoves[0] || this.keyPressed === acceptedMoves[4] ) {
                     console.log(`Player se moveu pra frente (${this.keyPressed})`)
 
                     // Getting current position value Y
@@ -58,7 +59,7 @@ export class Player {
                 };
                 
                 // A => MoveLeft
-                if ( this.keyPressed === acceptedMoves[1] ) {
+                if ( this.keyPressed === acceptedMoves[1] || this.keyPressed === acceptedMoves[5] ) {
                     console.log(`Player se moveu pra esquerda (${this.keyPressed})`);
 
                     // Flip Sprite
@@ -75,7 +76,7 @@ export class Player {
                 };
 
                 // S => MoveBackward
-                if ( this.keyPressed === acceptedMoves[2] ) {
+                if ( this.keyPressed === acceptedMoves[2] || this.keyPressed === acceptedMoves[6] ) {
                     console.log(`Player se moveu pra tras (${this.keyPressed})`);
 
                     // Getting current position value Y
@@ -89,7 +90,7 @@ export class Player {
                 };
 
                 // D => MoveRight
-                if ( this.keyPressed === acceptedMoves[3] ) {
+                if ( this.keyPressed === acceptedMoves[3] || this.keyPressed === acceptedMoves[7] ) {
                     console.log(`Player se moveu pra direita (${this.keyPressed})`);
 
                     // Flip Sprite
@@ -109,5 +110,4 @@ export class Player {
         });
     };
 };
-
 
