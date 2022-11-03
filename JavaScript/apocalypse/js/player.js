@@ -32,54 +32,83 @@ export class Player {
         this.playerObject.classList.add('player-object');
         this.playerObject.src = '../sprites/survivor.png';
 
-
-        // Setting player position
-        this.playerPositionX = 320;
-        this.playerPositionY = 240;
-
     };
 
     movePlayer() {
         // Add event listener on keydown
-        document.addEventListener('keydown', handleKeydown);
+        document.addEventListener('keydown', (event) => {
+            this.keyPressed = event.key;
 
-        function handleKeydown(event) {
-
-            // Finding the pressed key
-            const keyPressed = event.key;
-            
             // Validating movements
             const acceptedMoves = ['w', 'a', 's', 'd'];
 
-            if (acceptedMoves.includes(keyPressed)) {
+            if ( acceptedMoves.includes(this.keyPressed) ) {
+
+                // W => MoveFoward
+                if ( this.keyPressed === acceptedMoves[0] ) {
+                    console.log(`Player se moveu pra frente (${this.keyPressed})`)
+
+                    // Getting current position value Y
+                    const playerPositionClassValueY = getComputedStyle(document.documentElement).getPropertyValue('--player-position-y');
+                    this.playerPositionStringY = playerPositionClassValueY.replace('px', '');
+                    this.playerPositionY = Number(this.playerPositionStringY);
+
+                    // Move
+                    var newPosition = `${this.playerPositionY - 10}px`;
+                    document.documentElement.style.setProperty('--player-position-y', newPosition);
+                };
                 
-                switch (keyPressed) {
-                    // W => MoveFoward
-                    case acceptedMoves[0]:
-                        console.log(`Player se moveu pra frente (${keyPressed})`)
-                        var movFoward = this.playerPositionY - 10;
-                        document.documentElement.style.setProperty('--player-position-y', `${movFoward}px`);
-                        console.log(this.playerPositionY)
-                        break;
-                    
-                    // A => MoveLeft
-                    case acceptedMoves[1]:
-                        console.log(`Player se moveu pra esquerda (${keyPressed})`)
-                        break;
+                // A => MoveLeft
+                if ( this.keyPressed === acceptedMoves[1] ) {
+                    console.log(`Player se moveu pra esquerda (${this.keyPressed})`);
 
-                    // S => MoveBackward
-                    case acceptedMoves[2]:
-                        console.log(`Player se moveu pra tras (${keyPressed})`)
-                        break;
+                    // Flip Sprite
+                    this.playerObject.classList.add('sprite-flip');
 
-                    // D => MoveRight
-                    case acceptedMoves[3]:
-                        console.log(`Player se moveu pra direita (${keyPressed})`)
-                        break;
-                }
+                    // Getting current position value X
+                    const playerPositionClassValueX = getComputedStyle(document.documentElement).getPropertyValue('--player-position-x');
+                    this.playerPositionStringX = playerPositionClassValueX.replace('px', '');
+                    this.playerPositionX = Number(this.playerPositionStringX);
+
+                    // Move
+                    var newPosition = `${this.playerPositionX - 10}px`;
+                    document.documentElement.style.setProperty('--player-position-x', newPosition);
+                };
+
+                // S => MoveBackward
+                if ( this.keyPressed === acceptedMoves[2] ) {
+                    console.log(`Player se moveu pra tras (${this.keyPressed})`);
+
+                    // Getting current position value Y
+                    const playerPositionClassValueY = getComputedStyle(document.documentElement).getPropertyValue('--player-position-y');
+                    this.playerPositionStringY = playerPositionClassValueY.replace('px', '');
+                    this.playerPositionY = Number(this.playerPositionStringY);
+
+                    // Move
+                    var newPosition = `${this.playerPositionY + 10}px`;
+                    document.documentElement.style.setProperty('--player-position-y', newPosition);
+                };
+
+                // D => MoveRight
+                if ( this.keyPressed === acceptedMoves[3] ) {
+                    console.log(`Player se moveu pra direita (${this.keyPressed})`);
+
+                    // Flip Sprite
+                    this.playerObject.classList.remove('sprite-flip');
+
+                    // Getting current position value X
+                    const playerPositionClassValueX = getComputedStyle(document.documentElement).getPropertyValue('--player-position-x');
+                    this.playerPositionStringX = playerPositionClassValueX.replace('px', '');
+                    this.playerPositionX = Number(this.playerPositionStringX);
+
+                    // Move
+                    var newPosition = `${this.playerPositionX + 10}px`;
+                    document.documentElement.style.setProperty('--player-position-x', newPosition);
+                };
             };
-        };
-    };
 
+        });
+    };
 };
+
 
