@@ -9,7 +9,7 @@ class Crosshair(pygame.sprite.Sprite):
         self.image = pygame.image.load(picture_path)
         self.image = pygame.transform.scale(self.image, (30, 30))
         self.rect = self.image.get_rect()
-        self.gunshot = pygame.mixer.Sound("games\pygame targets\gunshot.wav")
+        self.gunshot = pygame.mixer.Sound("POO\games\pygame targets\gunshot.wav")
 
     def shoot(self):
         self.gunshot.play()
@@ -35,18 +35,18 @@ clock = pygame.time.Clock()
 screenWidth = 1280
 screenHeight = 720
 screen = pygame.display.set_mode((screenWidth, screenHeight))
-background = pygame.image.load("games\pygame targets\BG.jpg")
+background = pygame.image.load("POO\\games\\pygame targets\\target.png")
 pygame.mouse.set_visible(False)
 
 # Crosshair
-crosshair = Crosshair("games\pygame targets\crosshair.png")
+crosshair = Crosshair("POO\games\pygame targets\crosshair.png")
 crosshairGroup = pygame.sprite.Group()
 crosshairGroup.add(crosshair)
 
 # Targets
 targetGroup = pygame.sprite.Group()
 for target in range(20):
-    new_target = Target("games\\pygame targets\\target.png", random.randrange(0, screenWidth), random.randrange(0, screenHeight))
+    new_target = Target("POO\\games\\pygame targets\\target.png", random.randrange(0, screenWidth), random.randrange(0, screenHeight))
     targetGroup.add(new_target)
 
 while True:

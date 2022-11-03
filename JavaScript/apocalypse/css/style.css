@@ -1,0 +1,38 @@
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Screen */
+.screen {
+    width: 720px;
+    height: 480px;
+    background-color: #7C7C8A;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* -- Objects -- */
+
+/* Player */
+.player-object {
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    top: 240px;
+    left: calc(360px - (80px/2));
+}
