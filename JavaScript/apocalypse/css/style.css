@@ -32,6 +32,11 @@ body {
 
 /* -- Objects -- */
 
+/* Sprite Flip */
+.sprite-flip {
+    transform: rotateY(180deg);
+}
+
 /* Player */
 .player-object {
     width: 80px;
