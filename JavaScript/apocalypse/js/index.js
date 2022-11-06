@@ -1,4 +1,5 @@
-import { Player } from "./player.js";
+// import { Player } from "./player.js";
+import { Player } from "./playerteste.js";
 
 // Init Function
 function gameInit() {
@@ -9,7 +10,7 @@ function gameInit() {
     // Creating the game's objects
     const jogador = new Player();
     jogador.movePlayer();
-    jogador.playerShoot();
+
 
     // Adding objects in screen
     screen.appendChild(jogador.playerObject);

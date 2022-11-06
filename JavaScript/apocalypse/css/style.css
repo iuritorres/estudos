@@ -23,14 +23,14 @@ body {
 
 /* Screen */
 .screen {
-    width: 1080px;
-    height: 540px;
+    width: 540px;
+    height: 269px;
     background-color: #7C7C8A;
     border-radius: 4px;
     position: relative;
 
-    background-image: url('../sprites/rooms/night_forest.jpg');
-    background-position: center;
+    background-image: url('../sprites/rooms/south_hrule_field.png');
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -39,6 +39,7 @@ body {
 
 /* Sprite Flip */
 .sprite-flip {
+    /* transform: scaleX(-1); */
     transform: rotateY(180deg);
 }
 
@@ -46,6 +47,17 @@ body {
 .player-object {
     width: 80px;
     height: 80px;
+
+    position: absolute;
+    top: var(--player-position-y);
+    left: var(--player-position-x);
+}
+
+/* teste */
+.player-object2 {
+    width: 40px;
+    height: 40px;
+    background: url('../sprites/characters/link/linkcapless.png') 0px 0px;
 
     position: absolute;
     top: var(--player-position-y);

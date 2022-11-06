@@ -26,7 +26,7 @@ export class Player {
         this.secondaryHand = '';
 
 
-        // Creating player sprite
+        // Setting player sprite
         this.playerObject = document.createElement('img');
         this.playerObject.classList.add('player-object');
         this.playerObject.src = '../sprites/characters/survivor/survivor.png';
@@ -107,36 +107,6 @@ export class Player {
                 };
             };
 
-        });
-    };
-
-    playerShoot() {
-        // Detecting keyboard
-        document.addEventListener('keydown', (event) => {
-            this.keyPressed = event.key;
-
-            // Setting sleep function
-            function sleepFor(sleepDuration) {
-                var now = new Date().getTime();
-                while (new Date().getTime() < now + sleepDuration) {
-                    /* Do nothing */
-                };
-            };
-
-            // Activating shoot animationz
-            if ( this.keyPressed === ' ' ) {
-                console.log('Player atirou! traaa ta ta ta!!');
-
-                // Animations array
-                const shootAnimation = ['shoot_1', 'shoot_2', 'shoot_3', 'shoot_4', 'shoot_4', 'shoot_5', 'shoot_6'];
-
-                // Switching sprite to animation
-                for ( let i = 0; i < shootAnimation.length; i++ ) {
-                    sleepFor(1000);
-                    this.playerObject.src = `sprites\\characters\\survivor\\shoot_animation\\${shootAnimation[i]}.png`;
-                    console.log('figura')
-                };
-            };
         });
     };
 
