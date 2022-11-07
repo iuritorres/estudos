@@ -1,5 +1,5 @@
 // import { Player } from "./player.js";
-import { Player } from "./playerteste.js";
+import { Player } from "./player.js";
 
 // Init Function
 function gameInit() {

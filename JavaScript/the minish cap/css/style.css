@@ -39,7 +39,6 @@ body {
 
 /* Sprite Flip */
 .sprite-flip {
-    /* transform: scaleX(-1); */
     transform: rotateY(180deg);
 }
 
@@ -55,10 +54,10 @@ body {
 
 /* teste */
 .player-object2 {
-    width: 40px;
+    width: 35px;
     height: 40px;
-    background: url('../sprites/characters/link/linkcapless.png') 0px 0px;
-
+    background: url('../sprites/characters/link/linkcapless.png') -6px 0px;
+    
     position: absolute;
     top: var(--player-position-y);
     left: var(--player-position-x);

@@ -3,17 +3,21 @@ function animateScript(element, direction) {
     let elementId = document.getElementById(element);
     let direc
 
-    if ( direction === 'w' ) { direc = `-80` }
+    if ( direction === 'w' ) {
+        direc = `-70`
+    }
+    
+    else if (direction === 's') {
+        direc = `-6`
+    }
 
     else if (direction === 'a') {
-        direc = `-40`;
+        direc = `-38`;
         elementId.classList.remove('sprite-flip');
     }
 
-    else if (direction === 's') { direc = `0` }
-
     else if (direction === 'd') {
-        direc = `-40`;
+        direc = `-38`;
         elementId.classList.add('sprite-flip');
     };
 
@@ -70,7 +74,7 @@ export class Player {
                 this.playerPositionY = Number(this.playerPositionStringY);
 
                 // Move
-                var newPosition = `${this.playerPositionY - 10}px`;
+                var newPosition = `${this.playerPositionY - 2}px`;
                 document.documentElement.style.setProperty('--player-position-y', newPosition);
             }
 
@@ -81,7 +85,7 @@ export class Player {
                 this.playerPositionX = Number(this.playerPositionStringX);
 
                 // Move
-                var newPosition = `${this.playerPositionX - 10}px`;
+                var newPosition = `${this.playerPositionX - 2}px`;
                 document.documentElement.style.setProperty('--player-position-x', newPosition);
             }
 
@@ -92,7 +96,7 @@ export class Player {
                 this.playerPositionY = Number(this.playerPositionStringY);
 
                 // Move
-                var newPosition = `${this.playerPositionY + 10}px`;
+                var newPosition = `${this.playerPositionY + 2}px`;
                 document.documentElement.style.setProperty('--player-position-y', newPosition);
             }
 
@@ -103,7 +107,7 @@ export class Player {
                 this.playerPositionX = Number(this.playerPositionStringX);
 
                 // Move
-                var newPosition = `${this.playerPositionX + 10}px`;
+                var newPosition = `${this.playerPositionX + 2}px`;
                 document.documentElement.style.setProperty('--player-position-x', newPosition);
             }
 
