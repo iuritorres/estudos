@@ -1,14 +1,6 @@
 // Imports
-import './App.css';
-import { WebsiteRoutes } from './routes/';
+import { WebsiteRoutes } from './routes';
 
-// App
-function App() {
-  return (
-    <div className="App">
-      <WebsiteRoutes />
-    </div>
-  );
-};
-
-export default App;
+export const App = () => (
+  <WebsiteRoutes />
+);
