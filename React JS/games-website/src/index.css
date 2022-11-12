@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --white: rgba(255, 255, 255, 0.87);
+  --blue100: #23395d;
+  --blue200: #203354;
+  --blue300: #1c2e4a;
+  --blue400: #192841;
+  --blue500: #152238;
+
+  --gray900: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* A cada 1rem -> 10px */
+  font-size: 62.5%;
+
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--white);
+
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--blue500);
+}
+
+.limita-secao {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.6rem;
+}
+

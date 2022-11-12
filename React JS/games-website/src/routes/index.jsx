@@ -2,15 +2,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Home } from '../pages/Home';
-import { Sobre } from '../pages/About';
 
 // Routes
 export const WebsiteRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path='/' element={<Home/>} />
-                <Route path='/sobre' element={<Sobre/>} />
+                <Route exact path='/' element={<Home />} />            
             </Routes>
         </BrowserRouter>
     );

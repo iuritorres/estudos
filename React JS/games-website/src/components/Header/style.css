@@ -1,0 +1,92 @@
+header {
+    width: 100%;
+    background-color: var(--blue400);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+header:target {
+    scroll-margin-top: .8em;
+}
+
+.container-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-principal-header {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px 30px;
+    align-items: center;
+}
+
+.div-principal-header2 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px 10px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.user-header-div {
+    padding-top: 5px;
+}
+
+.div-principal-header2 .header-icons {
+    column-gap: 20px;
+}
+
+.subdiv-header {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 14px;
+}
+
+.subdiv-header a,
+.header-icons a {
+    font-size: 1.8rem;
+}
+
+.div-logo {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div-logo h1 {
+    font-size: 4rem;
+}
+
+.div-logo img {
+    width: 100px;
+}
+
+.header-icons {
+    font-size: 1.6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 15px;
+    padding-left: 14px;
+}
+
+.subdiv-header-title { column-gap: 2px; }
+
+.subdiv-header-title,
+.header-user-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.subdiv-header-title ion-icon:nth-child(2), 
+.header-user-icon ion-icon:nth-child(2) {
+    font-size: 1rem;
+}
