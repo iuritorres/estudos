@@ -64,7 +64,7 @@
     font-weight: 600;
 }
 
-.div-main-secao-banner a button {
+.button-assista-trailer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -77,18 +77,18 @@
     width: 280px;
 }
 
-.div-main-secao-banner a button a:hover {
+.button-assista-trailer p:hover {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQBAMAAABykSv/AAAAD1BMVEVHcEz///////////////8T4DEaAAAABHRSTlMAfDzBceh8dwAAAbdJREFUeNrt080NgjAAgFHFBSwwAHQDUwYA2/1nUqMeFC4aSSR536kk/clLy26nWVUfQkopNyHEWMe4WchQnuX7MJ/qboOOfVnovNZpK973YQkyzt5fd7ut3JYpNKHuqlh9gQhhmO/8sx9kWIJMx7dp7cu0lK6f6ZMHWPXNY+f5orL5RhAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEJA/gUjSdroA8+Gio++R+O4AAAAASUVORK5CYII=');
     transition-duration: 0.3s;
     transform: translateY(-4px);
 }
 
-.div-main-secao-banner a button div:hover {
+.button-assista-trailer div:hover {
     border: 2px solid #BA180B;
     transition-duration: 0.3s;
 }
 
-.div-main-secao-banner a button div {
+.button-assista-trailer div {
     background-image: url('https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4O1Gd8b5OxgX4Fcvn45mMS/864615ff92a6173a50da8f78faec0ba4/FC6_FreeWeekend_Collage960x540.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -103,101 +103,21 @@
     align-items: center;
 }
 
-.div-main-secao-banner a button div img {
+.button-assista-trailer div img {
     width: 70px;
 }
 
-.div-main-secao-banner a button a {
+.button-assista-trailer p {
     cursor: pointer;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQBAMAAABykSv/AAAAD1BMVEVHcEztAADtAADtAADtAADFDyfqAAAABHRSTlMAfDzBceh8dwAAAbdJREFUeNrt080NgjAAgFHFBSwwAHQDUwYA2/1nUqMeFC4aSSR536kk/clLy26nWVUfQkopNyHEWMe4WchQnuX7MJ/qboOOfVnovNZpK973YQkyzt5fd7ut3JYpNKHuqlh9gQhhmO/8sx9kWIJMx7dp7cu0lK6f6ZMHWPXNY+f5orL5RhAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEJA/gUjSdroA8+Gio++R+O4AAAAASUVORK5CYII=');
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: cover;
-    padding-top: 12px;
+    padding-top: 18px;
     width: 100%;
     height: 50px;
     color: var(--gray900);
     font-family: 'Bebas Neue', cursive;
     font-size: 2.6rem;
-}
-
-/* Secao Slider */
-
-.slider-secao-slider {
-    width: 90%;
-    height: 400px;
-    background: linear-gradient(90deg, var(--blue100) 0%, #182848 100%);
-    padding: 40px;
-    margin: 35px auto;
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 40px;
-}
-
-.div-main-secao-slider img {
-    position: absolute;
-    bottom: 3px;
-    right: 1px;
-    width: 500px;
-}
-
-.div-main-secao-slider h2 {
-    font-size: 4rem;
-    line-height: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.div-slider-new {
-    background-color: #BA180B;
-    width: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
     text-align: center;
-    font-size: 1.2rem;
-}
-
-.div-new-buttons {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 260px;
-    background-color: var(--blue300);
-    height: 80px;
-    padding: 8px;
-    border-radius: 20px;
-}
-
-.div-new-buttons a {
-    width: calc(100%/2 - 5px);
-    height: calc(100%);
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-    border-radius: 18px;
-    color: var(--white);
-}
-
-.div-new-buttons a:first-child:hover {
-    background-color: var(--blue200);
-    transform: translateY(-2px);
-    transition-duration: 0.2s;
-}
-
-.div-new-buttons a:last-child {
-    background: rgb(9, 198, 249);
-    background: linear-gradient(180deg, rgba(9, 198, 249, 1) 0%, rgba(4, 93, 233, 1) 100%);
-}
-
-.div-new-buttons a:last-child:hover {
-    box-shadow: rgb(9, 198, 249) 0 0 20px 1px;
-    transform: translateY(-2px);
-    transition-duration: 0.2s;
 }

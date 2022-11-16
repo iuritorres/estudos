@@ -1,0 +1,109 @@
+/* Secao Slider */
+
+.secao-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.slider-secao-slider {
+    width: 70vw;
+    height: 400px;
+    background: linear-gradient(90deg, var(--blue100) 0%, #182848 100%);
+    padding: 40px;
+    margin: 35px auto;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.seta-esquerda,
+.seta-direita {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.seta-esquerda:hover,
+.seta-direita:hover {
+    transform: translateY(-3px);
+    transition-duration: 0.3s;
+}
+
+.seta-esquerda {
+    left: 8vw;
+}
+
+.seta-direita {
+    right: 8vw;
+}
+
+#slider-image {
+    position: absolute;
+    bottom: 3px;
+    right: 30px;
+}
+
+.div-main-secao-slider h2 {
+    font-size: 4rem;
+    line-height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.div-slider-new {
+    background-color: #BA180B;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.div-new-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    background-color: var(--blue300);
+    height: 80px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.div-new-buttons a {
+    width: calc(100%/2 - 5px);
+    height: calc(100%);
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 18px;
+    color: var(--white);
+}
+
+.div-new-buttons a:first-child:hover {
+    background-color: var(--blue200);
+    transform: translateY(-2px);
+    transition-duration: 0.2s;
+}
+
+.div-new-buttons a:last-child {
+    background: rgb(9, 198, 249);
+    background: linear-gradient(180deg, rgba(9, 198, 249, 1) 0%, rgba(4, 93, 233, 1) 100%);
+}
+
+.div-new-buttons a:last-child:hover {
+    box-shadow: rgb(9, 198, 249) 0 0 20px 1px;
+    transform: translateY(-2px);
+    transition-duration: 0.2s;
+}
