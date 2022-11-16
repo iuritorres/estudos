@@ -5,7 +5,7 @@ import './style.css';
 // Home
 export const NewsSlider = () => {
 
-    //Codes
+    // Slides
     const newsSlides = [
         {
             title: <h2>Marvel's Spider Man:<br />Myles Morales</h2>,
