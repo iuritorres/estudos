@@ -59,8 +59,6 @@ export const NewsSlider = () => {
         console.log(index);
     };
 
-    document.onload(changeContent('left'));
-
     // Component return
     return (
         <section id='secao-slider' className="secao-slider">
