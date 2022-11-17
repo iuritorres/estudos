@@ -31,7 +31,6 @@ export const NewsSlider = () => {
 
     // Change slide content
     const changeContent = (pos) => {
-
         // Conditionals
         if (pos === 'left' && index === 0) {
             setIndex(newsSlides.length - 1);
@@ -60,15 +59,17 @@ export const NewsSlider = () => {
         console.log(index);
     };
 
+    document.onload(changeContent('left'));
+
     // Component return
     return (
-        <section className = "secao-slider">
+        <section id='secao-slider' className="secao-slider">
 
             <button className='seta-esquerda' onClick={() => { changeContent('left') } }>
                 <img src="/assets/chevron-back-outline.svg" alt="recuar-slider" />
             </button>
 
-            <div className="limita-secao div-secao-slider">
+            <div className="div-secao-slider">
 
                 <div className="slider-secao-slider">
 
