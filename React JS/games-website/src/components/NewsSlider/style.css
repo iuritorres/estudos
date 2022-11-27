@@ -50,6 +50,10 @@
     right: 30px;
 }
 
+.div-secao-slider {
+    margin: 0 auto;
+}
+
 .div-main-secao-slider h2 {
     font-size: 4rem;
     line-height: 45px;
