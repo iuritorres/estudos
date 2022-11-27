@@ -1,0 +1,100 @@
+.tema-claro {
+    background-color: #fff;
+    color: #000;
+}
+
+.tema-escuro {
+    background-color: #252323;
+    color: #fff;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-header img {
+    height: 80px;
+}
+
+.div-header button {
+    border: 2px solid #B2987D;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    width: 90px;
+    height: 42px;
+    border-radius: 25px;
+}
+
+.div-header button:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+    cursor: pointer;
+}
+
+.div-header button img {
+    width: 20px;
+    height: 20px;
+}
+
+.div-header button span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.secao-banner {
+    background: linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%);
+    background: url('../../assets/banner-barbearia.jpg') center center no-repeat;
+    background-size: cover;
+    height: 36vh;
+}
+
+.div-bemvindo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+.div-bemvindo h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.div-bemvindo p:first-of-type {
+    font-weight: 600;
+}
+
+.div-bemvindo p {
+    font-size: 1.5rem;
+}
+
+.div-bemvindo p:last-of-type {
+    margin-top: 24px;
+    font-family: 'Great Vibes', cursive;
+    color: #B2987D;
+    font-size: 4rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .limitar-secao {
+        max-width: 700px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 375px) {
+    .limitar-secao {
+        max-width: 350px;
+    }
+
+    p {
+        text-align: justify;
+    }
+}

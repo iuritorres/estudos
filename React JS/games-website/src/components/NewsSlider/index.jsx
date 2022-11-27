@@ -83,7 +83,6 @@ export const NewsSlider = () => {
                             <a href="#">Trailer</a>
                             <a href="#">Comprar</a>
                         </div>
-
                     </div>
 
                     <div className="div-main-secao-slider">
