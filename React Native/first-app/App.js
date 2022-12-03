@@ -1,24 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello World!</Text>
-      <Text>Criado por Iuri Torres</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.texto}>Nubank</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+
   container: {
-    backgroundColor: 'lightblue',
     flex: 1,
+    backgroundColor: '#820AD1',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
-    fontSize: 36,
+
+  texto: {
+    fontSize: 16,
+    color: 'white',
   },
+
+  img: {
+    width: 400,
+    height: 400,
+  },
+
 });
