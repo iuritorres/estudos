@@ -32,5 +32,5 @@ DEL !cSctVBS! /f /q
 )1>>!LOG! 2>>&1
 
 rem Deleting runtime.log
-DEL /f /a consertagoogle_runtime.log
+DEL /f /a fixgooglebug_runtime.log
 
