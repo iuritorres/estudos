@@ -9,7 +9,8 @@ class Player():
         self.attributes = {
             'health': 20,
             'hunger': 20,
-            'stamina': 10
+            'stamina': 10,
+            'agility': 5,
         }
 
         # Hotbar

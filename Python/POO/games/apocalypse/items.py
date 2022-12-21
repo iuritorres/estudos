@@ -5,17 +5,21 @@ class Item():
         self.equippable = {
             # Helmets
             'helmet':      ['Boné',
-                            'Capacete Kevlar'],
+                            'Capacete Kevlar',
+                            'Toca'],
 
             # Chestplates
             'chestplate':  ['Camisa',
-                            'Colete Kevlar'],
+                            'Colete Kevlar',
+                            'Camisa de manga longa'],
 
             # Leggings
             'leggings':    ['Calça Comum',
-                            'Calças Kevlar'],
+                            'Calças Kevlar',
+                            'Calcao'],
 
             # Boots
             'boots':       ['Tênis',
-                            'Botas Kevlar'] 
+                            'Botas Kevlar',
+                            'Havianas'] 
         }
