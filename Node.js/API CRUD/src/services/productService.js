@@ -50,7 +50,6 @@ export default class ProductService {
 
         try {
             const [result] = await this.#database.promise().execute('UPDATE products SET name = ?, price = ?, stock = ? WHERE id = ?', [name, price, stock, id])
-
             return result.affectedRows > 0
         }
         catch (error) {
@@ -70,4 +69,3 @@ export default class ProductService {
     }
 
 }
-

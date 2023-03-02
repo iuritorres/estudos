@@ -10,5 +10,4 @@ const pool = mysql2.createPool({
     database: process.env.DB_NAME
 })
 
-
 export default pool

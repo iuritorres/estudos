@@ -1,7 +1,4 @@
-import app from "../index.js"
-import factory from "../factories/factory.js"
-
-const productController = await factory.initialize()
+import app, { productController } from "../index.js"
 
 // get all products
 app.get('/products', productController.getAll.bind(productController))
@@ -17,4 +14,3 @@ app.put('/products/:id', productController.update.bind(productController))
 
 // delete product
 app.delete('/products/:id', productController.delete.bind(productController))
-
