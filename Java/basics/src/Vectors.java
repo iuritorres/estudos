@@ -17,6 +17,6 @@ public class Vectors {
         }
 
         System.out.println(Arrays.toString(texts));
-         System.out.println(Arrays.toString(test));
+        System.out.println(Arrays.toString(test));
     }
 }
