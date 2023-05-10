@@ -1,0 +1,1 @@
+categorys = ['fruits', 'computers', 'cellphones', 'books', 'peripherals']
